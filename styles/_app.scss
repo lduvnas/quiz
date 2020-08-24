@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$main: rgb(108, 156, 158); // rgb(99, 93, 114); //rgb(197, 155, 161);
+$light: #fff;
+:root {
+  background-color: lighten($main, 10%);
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  //overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: calc(50px + 4vw);
+  color: darken($main, 10%);
+  margin-bottom: 5rem;
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  font-size: calc(25px + 1vw);
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__btn {
+      font-size: 1.8rem;
+      padding: 1rem 0;
+      width: 20rem;
+      text-align: center;
+      border: 0.1rem solid darken($main, 10%);
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #fff;
+      background-color: darken($main, 10%);
+      border-radius: 20px;
+    }
+  }
+}
+
+.container > * {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid darken($main, 10%);
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: darken($main, 10%);
+  border-radius: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.forms {
+  position: relative;
+  z-index: -1;
+  //max-width: 80vw;
+  width: 100vw;
+  overflow: hidden;
+  top: 60px;
+}

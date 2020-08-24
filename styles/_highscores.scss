@@ -1,0 +1,52 @@
+.highscore__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+  overflow: unset;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}
+
+table {
+  border-collapse: collapse;
+  width: 40vw;
+  background-color: lighten($main, 30%);
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0 10px 20px 0 darken($main, 3%);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  @media (max-width: 703px) {
+    width: 70vw;
+  }
+}
+
+td {
+  padding: 18px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: darken($main, 25%);
+  background-color: lighten($main, 30%);
+  border-radius: 5px;
+}
+tr {
+  border-bottom: 10px solid $main;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    text-align: center;
+  }
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 30rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(255, 99, 99, 0.712);
+  border: 2px solid rgba(255, 99, 99, 0.884);
+  transition: all;
+}
+
+/* #errorMessage {
+  // margin-bottom: 1rem;
+} */
+
+input::placeholder {
+  color: #aaa;
+}
